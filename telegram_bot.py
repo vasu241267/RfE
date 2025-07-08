@@ -1112,7 +1112,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif query.data == 'back':
         user = get_user(user_id)
         await query.message.edit_text(
-            f"Welcome, @{user[1]}.\n"
+            f"Welcome, @{user[1]}🎉.\n"
             "Access features to earn rewards and manage your account below:",
             reply_markup=main_menu()
         )
