@@ -521,7 +521,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
             add_bonus(user_data[4], 5)
             await context.bot.send_message(
                 user_data[4],
-                f"✅ Referral @{user.username} joined the channel. +5 points credited."
+                f"✅ Referral @{user.username} joined the channel. Now you will get 20% of his lifetime earnings 🎉"
             )
         welcome_message = (
             f"Welcome, @{user.username}  👋.\n"
