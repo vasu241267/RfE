@@ -793,7 +793,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     referrer = get_user(referrer_id)
                     await context.bot.send_message(
                         referrer_id,
-                        f"Your referral @{user[1]} completed Task {task_id}: {task_title}. You earned {referrer_bonus} points (20% of task reward)."
+                        f" Wohoooo 🎉 Your referral @{user[1]} completed a Task: {task_title}. You earned {referrer_bonus} points (20% of task reward). \nRefer More Chsmpp 💫"
                     )
                 await query.message.edit_text(
                     f"Task {task_id}: {task_title} approved for @{user[1]}. +{task_price} points awarded.",
