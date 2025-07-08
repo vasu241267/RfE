@@ -24,10 +24,10 @@ logger = logging.getLogger(__name__)
 
 # Bot configuration
 WEBHOOK_URL = os.getenv("WEBHOOK_URL")  # Set in Koyeb environment variables
-BOT_TOKEN = os.getenv("BOT_TOKEN")  # Set in Koyeb environment variables
-CHANNEL_ID = os.getenv("CHANNEL_ID", "@Powerbank_Earning_Websites")  # Replace with your channel username
+BOT_TOKEN = os.getenv("8071747780:AAF_oRPKCf38r2vBlgGEkPQzfQeFAsN5H0k")  # Set in Koyeb environment variables
+CHANNEL_ID = os.getenv("-1002473874455", "@DarkDorking")  # Replace with your channel username
 ADMIN_IDS = [6972264549]  # Replace with your Telegram ID
-PORT = int(os.getenv("PORT", 8443))  # Default port for Koyeb
+PORT = int(os.getenv("PORT", 8080))  # Default port for Koyeb
 
 # Database setup
 def init_db():
