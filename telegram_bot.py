@@ -531,8 +531,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     else:
         keyboard = [[InlineKeyboardButton("📢 Join Channel", url=f"https://t.me/{CHANNEL_ID[1:]}")]]
         await update.message.reply_text(
-            f" 🔒 Oops! To unlock the bot's awesome features, please join our channel @DarkDorking! 🌟
-Click the button below and join the community to start earning rewards! 😎Please join {CHANNEL_ID} to access bot features. And send /start after join 🔪",
+            f" 🔒 Oops! To unlock the bot's awesome features, please join our channel @DarkDorking! 🌟,\n"
+"Click the button below and join the community to start earning rewards! 😎Please join {CHANNEL_ID} to access bot features. And send /start after join 🔪",
             reply_markup=InlineKeyboardMarkup(keyboard)
         )
         context.job_queue.run_once(check_subscription, 30, data={'user_id': user.id})
