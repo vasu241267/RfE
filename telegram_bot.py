@@ -524,8 +524,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 f"✅ Referral @{user.username} joined the channel. +5 points credited."
             )
         welcome_message = (
-            f"Welcome, @{user.username}.\n"
-            "Access features to earn rewards and manage your account below:"
+            f"Welcome, @{user.username}  👋.\n"
+            "Earn Money By Completing Simple Tasks 🕊️ \nAccess features to earn rewards and manage your account below:"
         )
         await update.message.reply_text(welcome_message, reply_markup=main_menu())
     else:
