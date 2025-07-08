@@ -1090,16 +1090,19 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     elif query.data == 'about':
         message = (
-            f"About This Bot:\n"
-            f"This bot enables users to earn rewards by completing tasks and referring others.\n"
-            f"Key Features:\n"
-            f"- Join {CHANNEL_ID} to access all features.\n"
-            f"- Earn 5 points per referral and 20% of their task rewards.\n"
-            f"- Complete tasks to earn points, pending admin approval.\n"
-            f"- Withdraw earnings (minimum 15 Rs) via UPI after setting your UPI ID.\n"
-            f"- View task status, withdrawal history, and account details.\n"
-            f"- Stay updated with announcements.\n"
-            f"Select an option below to begin:"
+    "🧠 Welcome to TaskBot!\n\n"
+    "💼 Yahan aapko milte hain simple aur easy tasks jo aap apne mobile se complete karke paise kama sakte hain.\n"
+    "📲 Tasks ho sakte hain jaise app install karna, review dena, ya choti choti surveys complete karna.\n\n"
+    "👥 Invite Karo Aur Kamao:\n"
+    "Apne friends ko invite karo aur unki lifetime earning ka 20% commission kamao – bina kuch kiye!\n"
+    "🔥 Example: Agar aapke dost ₹100 kamaate hain, to aapko ₹20 milega – automatically!\n\n"
+    "💸 Withdraw Info:\n"
+    "Minimum withdrawal sirf ₹15 hai.\n"
+    "Aap directly apne UPI ID par payment le sakte hain.\n"
+    "Payouts usually 24 hours ke andar process ho jaate hain.\n\n"
+    "📌 Start karo aaj hi aur apna earning journey shuru karo!\n\n"
+    "🚀 Type /tasks shuru karne ke liye ya /invite link lene ke liye."
+
         )
         await query.message.edit_text(
             message,
