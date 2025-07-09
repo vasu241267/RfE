@@ -518,10 +518,10 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         update_channel_status(user.id, True)
         user_data = get_user(user.id)
         if user_data[4]:
-            add_bonus(user_data[4], 5)
+            add_bonus(user_data[4], 0)
             await context.bot.send_message(
                 user_data[4],
-                f"🎊 Great news! Your referral @{user.username} joined {CHANNEL_ID}! You've earned +5 points! 💰 Keep inviting! 🚀"
+                f"🎊 Great news! Your referral @{user.username} joined {CHANNEL_ID}! Now you will recieve 50% of his earnings ! 💰 Keep inviting! 🚀"
             )
         welcome_message = (
             f"🎉 Hey @{user.username}, welcome to the party! 🎈\n"
@@ -544,10 +544,10 @@ async def check_subscription(context: ContextTypes.DEFAULT_TYPE):
         user = get_user(user_id)
         update_channel_status(user_id, True)
         if user[4]:
-            add_bonus(user[4], 5)
+            add_bonus(user[4], 0)
             await context.bot.send_message(
                 user[4],
-                f"🎊 Your referral @{user[1]} just joined {CHANNEL_ID}! +5 points added to your balance! 💰 Keep spreading the word! 🚀"
+                f"🎊 Your referral @{user[1]} just joined {CHANNEL_ID}! Now you will receive 50% of his earnings ! 💰 Keep spreading the word! 🚀"
             )
         welcome_message = (
             f"🎉 Welcome aboard, @{user[1]}! 🎈\n"
