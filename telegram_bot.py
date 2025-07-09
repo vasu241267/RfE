@@ -858,8 +858,8 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if query.data == 'refer':
         referral_link = f"https://t.me/{context.bot.username}?start={user_id}"
         await query.message.edit_text(
-            f"🎉 Invite your friends and earn big! Share this link:\n{referral_link}\n"
-            f"💰 Get 5 points per friend who joins {CHANNEL_ID} and 50% of their task rewards! 🚀 Start sharing now!",
+            f"🎉 Invite your friends and earn big! Share this link and earn 50% of his earnings:\n{referral_link}\n"
+            f"💰 Get lifetime rewards per friend who joins {CHANNEL_ID} and 50% of their task rewards! 🚀 Start sharing now!",
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("⬅️ Back to Menu", callback_data='back')]])
         )
 
@@ -1101,7 +1101,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"Welcome to our awesome bot! 🚀 Earn rewards by completing fun tasks and inviting friends to join {CHANNEL_ID}! 🎉\n"
             f"Key Features:\n"
             f"📢 Join {CHANNEL_ID} to unlock all features.\n"
-            f"💰 Earn 5 points per friend who joins and 50% of their task rewards!\n"
+            f"💰 Earn 50% of their task rewards who joined via your link!\n"
             f"📋 Complete tasks to earn points, pending admin approval.\n"
             f"💸 Withdraw earnings (min. 15 Rs) via UPI after setting your UPI ID.\n"
             f"📊 Track your progress, withdrawals, and more!\n"
